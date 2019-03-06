@@ -1,0 +1,48 @@
+body,
+html {
+  background: linear-gradient(to right, #2c5364, #203a43, #0f2027);
+}
+
+#drum-machine {
+  margin: 0 auto;
+  margin-top: 7%;
+  text-align: center;
+  width: 50%;
+  border-radius: 1em;
+  border: 1px solid white;
+  background-color: #203a43;
+}
+
+.grid {
+  background-color: #0f2027;
+  margin: 1.5em;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto;
+  grid-template-areas: '. . .' '. . .' '. . .';
+}
+
+#drum-pad {
+  height: 10em;
+  width: 100%;
+  text-align: center;
+  color: white;
+  border: 1px solid white;
+  position: relative;
+}
+
+#drum-pad > p {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+
+.drum-pad {
+}
+
+.pad.active {
+  background-color: orange;
+}
